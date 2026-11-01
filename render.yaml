@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: twitch-clip-player
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python twitch_clip_player.py
